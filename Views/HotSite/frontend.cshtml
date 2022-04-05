@@ -1,0 +1,66 @@
+@{
+    ViewBag.Title = "Teste Front";
+    Layout = "~/Views/Shared/Base/_Layout.cshtml";
+}
+
+<div class="ui container margin bottom large">
+    <div class="ui grid">
+        <div class="row two column">
+            <div class="column">
+                <form class="ui form" id="form-frontend">
+                    <div class="field">
+                        <label>Nome</label>
+                        <div class="ui left icon input">
+                            <i class="user icon"></i>
+                            <input type="text" name="name" placeholder="Nome" class="input-text">
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label>E-mail</label>
+                        <div class="ui left icon input">
+                            <i class="mail icon"></i>
+                            <input type="text" name="email" placeholder="E-mail" class="input-text">
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label>Telefone</label>
+                        <div class="ui left icon input">
+                            <i class="phone icon"></i>
+                            <input type="text" name="phone" placeholder="(00) 00000-0000" class="masked mask_phone input-text">
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label>Assunto</label>
+                        <div class="ui left icon input">
+                            <i class="mail icon"></i>
+                            <input type="text" name="subject" placeholder="Assunto" class="input-text">
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label>Mensagem</label>
+                        <textarea name="message" class="input-text"></textarea>
+                    </div>
+
+                    <div class="ui submit button">Enviar</div>
+                    <div class="ui error message"></div>
+
+                    <div class="form-response"></div>
+                </form>
+            </div>
+
+            <div class="column">
+                <ul class="list-frontend">
+                    <li>Nome: <span id="input-value-name"></span></li>
+                    <li>E-mail: <span id="input-value-email"></span></li>
+                    <li>Telefone: <span id="input-value-phone"></span></li>
+                    <li>Assunto: <span id="input-value-subject"></span></li>
+                    <li>Mensagem: <span id="input-value-message"></span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

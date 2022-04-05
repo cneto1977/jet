@@ -1,0 +1,23 @@
+.list-frontend{
+    li{
+        padding: 10px 0;
+        font-size: 18px;
+
+        span{
+            font-weight: 700;
+        }
+    }
+}
+
+.form-response{
+    margin: 10px 0;
+    font-size: 14px;
+
+    .is-success{
+        color: $success-color;
+    }
+    
+    .is-error{
+        color: $error-color;
+    }
+}
